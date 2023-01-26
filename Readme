@@ -1,0 +1,20 @@
+# Files Watcher
+This script is used to watch files on a specific folder and upload any changes of these files to S3
+ 
+# Environement and requirements
+
+
+For Script to work, we need to set the environment for AWS credentials and for python :
+
+
+
+* The most secure way to use the AWS credentials on windows is to configure your user on the cli using "aws configure" command
+
+download the AWS cli through this link https://aws.amazon.com/cli/
+
+* Download the script requirements use "pip install -r requirements.txt" to download the needed packages
+
+* Once you installed the packages, set the AWS credentials and you made sure are correct, you can test the script by running "python main.py bucketname path" replace bucketname with the bucket you will use on s3 and path by the path of the folder you want to watch.
+
+* If everything is running, you can exit that process using CTRL+C and then start a background process using "pythonw main.py bucketname path"
+
